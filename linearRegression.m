@@ -8,11 +8,4 @@ num_iterations=100000;
 alpha=0.0001;
 [theta,j_history]=gradient(X,y,theta,alpha,num_iterations);
 X=[ones(length(y),1),X];
-plot(X(:,2), X*theta, '-')
-
-
-
-
-
-
-
+plot(X(:,2), X*theta, '-r');
