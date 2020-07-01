@@ -1,4 +1,5 @@
 function [J] =costfunction(X,y,theta)
     m=length(X);
-    J=sum(((X*theta)-y).^2)/(2*m)
+    h = X*theta;
+    J= (1/(2*m)) * sum((h-y).^2);
 end
