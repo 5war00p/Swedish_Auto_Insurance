@@ -9,10 +9,10 @@ alpha=0.0001;
 %X=[ones(length(y),1),X];
 %plot(X(:,2), X*theta, '-')
 %hold off;
+plotData(x1,y1);
+hold on;
 x1=[ones(length(y1),1),x1];
-%plotData(x1,y1);
-%hold on;
-plot(x1, x1*theta, '-')
+plot(x1(:,2), x1*theta, '-')
 
 
 
